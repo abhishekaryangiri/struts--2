@@ -1,0 +1,28 @@
+JDBC: 
+Java Database Connectivity
+
+-> JDBC is java API to connect and exicute the query with the database.
+
+-> It is a part of javaSE(Standerd Edition)
+
+-> JDBC API uses JDBC DRivers to connect with the database.
+
+{
+`````````# There are 4 types of Connectivity
+
+1. JDBC-ODBC Bridge driver,
+2. NAtive Driver,3. Network Protocol Driver,
+4. Thin Driver
+}
+
+=> We can use JDBC Api to access tubular data stored in any rational database
+
+=> What do JDBC ?
+
+-> we can save, update, delet and fetch data from the database.
+It is like open Database Connectivity(ODBC) provided by microsoft.
+
+
+JDBC API<--JAVA APP-->JDBC DRIVER-->DATABASE
+
+the current version of JDBC is 4.3, it is stable released since sep 2017. it is based on open/X SQL call level interface
