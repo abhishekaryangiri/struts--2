@@ -8,10 +8,10 @@ public class UserDAO {
 	
 	public boolean insert(int uid, String name, String add, String phone) 
 	{
-		try {//java se db me jane p try catch lgana padega
-			Class.forName("org.postgresql.Driver");  //step1
-			String url="jdbc:postgresql://localhost:5432/26Sep";
-			Connection con = DriverManager.getConnection(url, "postgres", "postgres"); //step2
+		try {
+			Connection con = ConUtility.getConne();
+			//java se db me jane p try catch lgana padega
+		
 			//connection interface is a factory of statement,prepared statement, and callable statement
 			//statement: 1. jaha static query fire krna ho, 2. query everytime compile and exicutre hoti h, 3. Insecure hota h( bcz koe v sql injection de skta h)
 			//prepared stat: 1. jaha parametrise(dynamic) fire krna ho, 2.  query first time compile hoga second time exicute exicuting ( pre compiled) hota h, 3.no sql injection
