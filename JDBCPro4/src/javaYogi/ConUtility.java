@@ -5,7 +5,11 @@ import java.sql.DriverManager;
 
 public class ConUtility {
 //utility: pure connection ka single utilty
-	public static Connection con = null;
+	private static Connection con = null;
+	private ConUtility() 
+	{
+		
+	}
 	static 
 	{
 		try {
@@ -16,7 +20,7 @@ public class ConUtility {
 			
 		}
 	}
-	public static Connection getConne()
+	public static Connection getConn()
 	{
 		return con;
 	}
